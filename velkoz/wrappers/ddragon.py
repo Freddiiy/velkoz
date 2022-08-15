@@ -9,4 +9,4 @@ class DDragon:
         self.newest_version = requests.get("https://ddragon.leagueoflegends.com/api/versions.json").json()[0]
 
     def get_champion(self, champ_name):
-        requests.get(f"{self.url}/{self.newest_version}/")
+        requests.get(f"{self.url}/{self.newest_version}/data/en_US/champion.json")
