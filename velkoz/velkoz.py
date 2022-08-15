@@ -1,9 +1,10 @@
 from core import champion, common
 
 
-def get_riot_api_key():
-    return common.get_riot_api_key()
+def get_champion(name: str):
+    return champion.get_champion(name)
 
 
-def get_champion(champ_name: str):
-    return champion
+if __name__ == "__main__":
+    ahri = get_champion("Ahri")
+    print(ahri.name)

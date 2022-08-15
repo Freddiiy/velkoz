@@ -13,7 +13,3 @@ def get_newest_version():
 
 def get_game_version(version: str):
     return None
-
-
-def get_riot_api_key():
-    return
